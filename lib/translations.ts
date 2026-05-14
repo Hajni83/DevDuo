@@ -204,7 +204,7 @@ export const translations = {
         message: "Üzenet",
         choose: "Válassz opciót",
         submit: "Üzenet Küldése",
-        options: ["Vállalati Webalkalmazás", "Egyedi SaaS", "Prémium Weboldal", "Konzultáció"],
+        options: ["Vállalati Webalkalmazás", "Egyedi SaaS", "Prémium Weboldal", "Konzultáció", "Egyéb"],
       },
     },
     footer: {
