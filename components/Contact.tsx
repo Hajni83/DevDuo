@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
 import { useLanguage } from "@/lib/LanguageContext";
+import Image from "next/image";
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -64,6 +65,34 @@ export default function Contact() {
             </p>
 
             <div className="space-y-6">
+                 {/* Hajnalka */}
+              <div className="flex items-center space-x-4 group">
+                <a
+                  href="https://www.linkedin.com/in/hajnalka-maro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative flex-shrink-0"
+                  title="LinkedIn"
+                >
+                  <div className="w-16 h-20 rounded-2xl overflow-hidden border-2 border-accent-secondary/20 hover:border-accent-secondary transition-all shadow-sm">
+                    <Image
+                      src="/avatars/avatar.png"
+                      alt="Hajnalka"
+                      width={64}
+                      height={64}
+                      quality={95}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                  <span className="absolute -bottom-1.5 -right-1.5 w-6 h-6 bg-[#0A66C2] rounded-full flex items-center justify-center shadow-md">
+                    <FaLinkedin className="w-3.5 h-3.5 text-white" size={13} />
+                  </span>
+                </a>
+                <div className="flex flex-col">
+                  <span className="text-xs font-bold text-accent-secondary uppercase tracking-widest mb-1">Írj nekem</span>
+                  <a href="mailto:maro.hajnalka@gmail.com" className="text-md font-medium text-slate-900 hover:text-accent-secondary transition-colors break-all">maro.hajnalka@gmail.com</a>
+                </div>
+              </div>
               {/* Jocó */}
               <div className="flex items-center space-x-4 group">
                 <a
@@ -73,44 +102,27 @@ export default function Contact() {
                   className="relative flex-shrink-0"
                   title="LinkedIn"
                 >
-                  <img
-                    src="/avatars/Jocó.jpg"
-                    alt="Jocó"
-                    className="w-16 h-16 rounded-2xl object-cover border-2 border-accent-primary/20 hover:border-accent-primary transition-all shadow-sm"
-                  />
+                  <div className="w-16 h-20 rounded-2xl overflow-hidden border-2 border-accent-primary/20 hover:border-accent-primary transition-all shadow-sm">
+                    <Image
+                      src="/avatars/Jocó.png"
+                      alt="Jocó"
+                      width={64}
+                      height={64}
+                      quality={95}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
                   <span className="absolute -bottom-1.5 -right-1.5 w-6 h-6 bg-[#0A66C2] rounded-full flex items-center justify-center shadow-md">
                     <FaLinkedin className="w-3.5 h-3.5 text-white" size={13} />
                   </span>
                 </a>
                 <div className="flex flex-col">
-                  <span className="text-xs font-bold text-accent-primary uppercase tracking-widest mb-1">Írj nekünk</span>
+                  <span className="text-xs font-bold text-accent-primary uppercase tracking-widest mb-1">Vagy nekem</span>
                   <a href="mailto:szurilo@gmail.com" className="text-md font-medium text-slate-900 hover:text-accent-primary transition-colors break-all">szurilo@gmail.com</a>
                 </div>
               </div>
 
-              {/* Hajnalka */}
-              <div className="flex items-center space-x-4 group">
-                <a
-                  href="https://www.linkedin.com/in/hajnalka-maro/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative flex-shrink-0"
-                  title="LinkedIn"
-                >
-                  <img
-                    src="/avatars/avatar.png"
-                    alt="Hajnalka"
-                    className="w-16 h-16 rounded-2xl object-cover border-2 border-accent-secondary/20 hover:border-accent-secondary transition-all shadow-sm"
-                  />
-                  <span className="absolute -bottom-1.5 -right-1.5 w-6 h-6 bg-[#0A66C2] rounded-full flex items-center justify-center shadow-md">
-                    <FaLinkedin className="w-3.5 h-3.5 text-white" size={13} />
-                  </span>
-                </a>
-                <div className="flex flex-col">
-                  <span className="text-xs font-bold text-accent-secondary uppercase tracking-widest mb-1">Írj nekünk</span>
-                  <a href="mailto:maro.hajnalka@gmail.com" className="text-md font-medium text-slate-900 hover:text-accent-secondary transition-colors break-all">maro.hajnalka@gmail.com</a>
-                </div>
-              </div>
+           
             </div>
           </motion.div>
 

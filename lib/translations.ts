@@ -22,7 +22,7 @@ export const translations = {
       badge: "Our Story",
       title_part1: "Digital Expertise Built on ",
       title_accent: "Partnership",
-      description1: "As a development duo, we bring years of enterprise experience to the world of modern web development. Building on our professional foundation in large-scale corporate systems, we now create digital solutions that are simultaneously fast, reliable, and visually sophisticated.",
+      description1: "As a development duo, we bring years of experience in large and small companies to the world of modern web development. Building on our diverse professional foundations, we create digital solutions that are fast, reliable, and visually sophisticated.",
       quote: "Code is our language, excellence is our standard.",
       subquote: "Bringing decades of enterprise-level discipline to the creative world of modern web development.",
       stats: {
@@ -129,7 +129,7 @@ export const translations = {
       badge: "Történetünk",
       title_part1: "Partnerségre épített ",
       title_accent: "digitális szakértelem",
-      description1: "Fejlesztő párosként több éves enterprise tapasztalatot hozunk a modern webfejlesztés világába. Nagyvállalati rendszereken szerzett szakmai alapjainkra építve ma olyan digitális megoldásokat készítünk, amelyek egyszerre gyorsak, megbízhatóak és vizuálisan kifinomultak.",
+      description1: "Fejlesztő párosként több éves nagy- és kisvállalati tapasztalatot hozunk a modern webfejlesztés világába. Sokrétű szakmai alapjainkra építve ma olyan digitális megoldásokat készítünk, amelyek egyszerre gyorsak, megbízhatóak és vizuálisan kifinomultak.",
       quote: "A kód a nyelvünk, a kiválóság a mércénk.",
       subquote: "Több évtizedes enterprise-szintű fegyelmet hozunk a modern webfejlesztés kreatív világába.",
       stats: {
@@ -158,7 +158,7 @@ export const translations = {
         },
         {
           title: "Prémium Landing Oldalak",
-          desc: "Magas konverziójú, pixel-tökéletes érkező oldalak, amelyek lenyűgözik a látogatókat.",
+          desc: "Magas konverziójú, pixel-pontos landing oldalak, amelyek lenyűgözik a látogatókat.",
         },
         {
           title: "UI/UX Megvalósítás",
@@ -187,7 +187,7 @@ export const translations = {
         {
           title: "Tar Engineering",
           category: "Ipari Weboldal",
-          description: "Gépgyártással és technológiai megoldásokkal foglalkozó vállalat modern, többnyelvű bemutatkozó oldala.",
+          description: "Gépgyártással és technológiai megoldásokkal foglalkozó vállalat modern, többnyelvű, bemutatkozó oldala.",
         },
       ],
     },
