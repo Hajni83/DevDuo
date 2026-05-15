@@ -88,10 +88,10 @@ export default function Hero() {
 
             {/* Hajni — kisebb, bal */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+             initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.3 }}
-              className="relative w-[140px] sm:w-[180px] md:w-[210px] aspect-[4/5] z-10 self-end mb-4"
+              transition={{ duration: 0.7, delay: 0.45 }}
+              className="relative w-[160px] sm:w-[210px] md:w-[240px] aspect-[4/5] z-20"
             >
               <div className="w-full h-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl ring-1 ring-black/5">
                 <Image
@@ -138,7 +138,7 @@ export default function Hero() {
               initial={{ opacity: 0, x: 40, y: -20 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 0.8, delay: 0.35, ease: "easeOut" }}
-              className="absolute top-0 left-8 w-[240px] h-[300px] z-10"
+              className="absolute top-0 left-[-24px] w-[290px] h-[360px] z-10"
             >
               <div className="w-full h-full rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5">
                 <Image
