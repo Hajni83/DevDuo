@@ -12,60 +12,59 @@ export const translations = {
       terms_of_service: "Terms of Service",
     },
     hero: {
-      badge: "Enterprise Grade Development Duo",
       title_part1: "",
-      title_gradient: "Enterprise Experience",
-      title_part2: " Modern Web Solutions",
-      description: "We build digital products that don't just look good, but deliver real business results.",
+      title_gradient: "Professional Websites",
+      title_part2: " for Small Businesses",
+      description: "We help your business stand out online. We build modern, fast websites that attract customers and drive growth.",
       cta_primary: "View Our Work",
       cta_secondary: "Talk to Us",
     },
     about: {
-      badge: "Our Story",
-      title_part1: "Digital Expertise Built on ",
-      title_accent: "Partnership",
-      description1: "As a development duo, we bring years of experience in large and small companies to the world of modern web development. Building on our diverse professional foundations, we create digital solutions that are fast, reliable, and visually sophisticated.",
-      quote: "Code is our language, excellence is our standard.",
-      subquote: "Bringing decades of enterprise-level discipline to the creative world of modern web development.",
+      badge: "Our Mission",
+      title_part1: "Your Reliable ",
+      title_accent: "Digital Partners",
+      description1: "As a development duo, our goal is to make top-tier web technologies accessible to micro and small businesses. We build professional websites that build trust and support your growth.",
+      quote: "A great website is your best salesperson.",
+      subquote: "We handle the technical heavy lifting, so you can focus on running your business.",
       stats: {
-        experience: "Foundations",
-        exp_value: "Stable Tech Background",
-        collab: "Synergy",
-        collab_value: "Coordinated Dev Skills",
-        perf: "Quality",
-        perf_value: "Superior Web Performance",
+        experience: "Foundation",
+        exp_value: "Reliable Background",
+        collab: "Approach",
+        collab_value: "Personal Attention",
+        perf: "Value",
+        perf_value: "Fast ROI",
         reliability: "Guarantee",
-        rel_value: "Solutions Designed for Longevity",
+        rel_value: "Long-term Support",
       },
     },
     services: {
       badge: "Capabilities",
-      title_part1: "Full-Stack ",
-      title_accent: "Excellence",
+      title_part1: "Our ",
+      title_accent: "Services",
       items: [
         {
-          title: "Enterprise Web Apps",
-          desc: "Robust, scalable internal systems and customer-facing platforms built with Next.js and TypeScript.",
+          title: "Business Websites",
+          desc: "Professional online presence that builds trust and showcases your services beautifully.",
         },
         {
-          title: "Custom SaaS Development",
-          desc: "End-to-end development of subscription-based platforms with seamless API integrations.",
+          title: "Landing Pages",
+          desc: "Targeted, high-converting pages for marketing campaigns and product launches.",
         },
         {
-          title: "Premium Landing Pages",
-          desc: "High-conversion, pixel-perfect landing pages designed to wow and convert visitors.",
+          title: "E-commerce Solutions",
+          desc: "User-friendly online stores that help you sell your products 24/7 with ease.",
         },
         {
-          title: "UI/UX Implementation",
-          desc: "Translating complex designs into fluid, responsive, and accessible user interfaces.",
+          title: "Search Engine Optimization (SEO)",
+          desc: "Technical and content optimization so customers can easily find you on Google.",
         },
         {
           title: "Mobile-First Design",
-          desc: "Fully responsive experiences that feel native on every device and screen size.",
+          desc: "Flawless and responsive experience on every device – smartphones, tablets, and desktops.",
         },
         {
-          title: "Performance Audits",
-          desc: "Deep-dive optimization for Core Web Vitals, speed, and enterprise-level SEO.",
+          title: "Maintenance & Support",
+          desc: "Ongoing updates and technical support to keep your website secure and running smoothly.",
         },
       ],
     },
@@ -75,9 +74,9 @@ export const translations = {
       title_accent: "Track Record",
       projects: [
         {
-          title: "VibeVaults Feedback Tool",
-          category: "SaaS Solution",
-          description: "A modern platform that eliminates feedback chaos and accelerates web development workflows.",
+          title: "VibeVaults",
+          category: "Business Solution",
+          description: "A modern platform that simplifies customer interactions and accelerates workflows.",
         },
         {
           title: "Tar Engineering",
@@ -90,7 +89,7 @@ export const translations = {
       badge: "Get in Touch",
       title_part1: "Let's Build Something ",
       title_accent: "Exceptional",
-      description: "Whether you're looking for an enterprise-level system or a premium custom web application, we're here to help you engineer success.",
+      description: "Whether you need a simple presentation site or a complete webshop, we are here to help your business succeed.",
       email_label: "Email Us",
       form: {
         name: "Name",
@@ -99,11 +98,11 @@ export const translations = {
         message: "Message",
         choose: "Choose option",
         submit: "Send Message",
-        options: ["Enterprise Web App", "Custom SaaS", "Premium Website", "Consultation"],
+        options: ["Business Website", "E-commerce", "Landing Page", "Maintenance", "Consultation"],
       },
     },
     footer: {
-      description: "Engineering enterprise-grade web solutions and premium digital experiences through technical mastery and artisanal precision.",
+      description: "Professional web solutions for micro and small businesses, delivered with personal attention and technical mastery.",
       nav_title: "Navigation",
       connect_title: "Connect",
       built_with: "Built with",
@@ -157,7 +156,7 @@ export const translations = {
         },
         {
           title: "10. Contact",
-          content: ["For questions: maro.hajnalka@gmail.com, szurilo@gmail.com"]
+          content: ["For questions: hajnalka@devduo.eu, jozsef@devduo.eu"]
         }
       ]
     },
@@ -171,7 +170,7 @@ export const translations = {
         },
         {
           title: "2. Data Controller Information",
-          content: ["Service name: DEV DUO<br />Operator: Maró Hajnalka, Tar József<br />Contact: maro.hajnalka@gmail.com, szurilo@gmail.com <br />Location: European Union (Hungary)"]
+          content: ["Service name: DEV DUO<br />Operator: Maró Hajnalka, Tar József<br />Contact: hajnalka@devduo.eu, jozsef@devduo.eu <br />Location: European Union (Hungary)"]
         },
         {
           title: "3. Scope of Managed Data",
@@ -235,7 +234,7 @@ export const translations = {
         },
         {
           title: "11. Contact",
-          content: ["For questions: maro.hajnalka@gmail.com, szurilo@gmail.com"]
+          content: ["For questions: hajnalka@devduo.eu, jozsef@devduo.eu"]
         }
       ]
     }
@@ -251,72 +250,71 @@ export const translations = {
       terms_of_service: "Általános Szerződési Feltételek",
     },
     hero: {
-      badge: "Enterprise Szintű Fejlesztő Páros",
       title_part1: "",
-      title_gradient: "Enterprise tapasztalat",
-      title_part2: " Modern webes megoldások",
-      description: "Olyan digitális termékeket építünk, amelyek nemcsak jól néznek ki, hanem üzleti eredményeket is hoznak.",
+      title_gradient: "Profi Weboldalak",
+      title_part2: " Kisvállalkozásoknak",
+      description: "Segítünk vállalkozásának kitűnni az online térben. Olyan modern és gyors weboldalakat készítünk, amelyek vonzzák az ügyfeleket.",
       cta_primary: "Munkáink megtekintése",
       cta_secondary: "Beszélgessünk",
     },
     about: {
-      badge: "Történetünk",
-      title_part1: "Partnerségre épített ",
-      title_accent: "digitális szakértelem",
-      description1: "Fejlesztő párosként több éves nagy- és kisvállalati tapasztalatot hozunk a modern webfejlesztés világába. Sokrétű szakmai alapjainkra építve ma olyan digitális megoldásokat készítünk, amelyek egyszerre gyorsak, megbízhatóak és vizuálisan kifinomultak.",
-      quote: "A kód a nyelvünk, a kiválóság a mércénk.",
-      subquote: "Több évtizedes enterprise-szintű fegyelmet hozunk a modern webfejlesztés kreatív világába.",
+      badge: "Küldetésünk",
+      title_part1: "Megbízható ",
+      title_accent: "digitális partnerek",
+      description1: "Fejlesztő párosként célunk, hogy a mikro- és kisvállalkozások is hozzáférjenek a legmodernebb webes technológiákhoz. Vállalkozása számára olyan profi weboldalt építünk, amely bizalmat ébreszt a vevőkben és támogatja a növekedést.",
+      quote: "Egy jó weboldal a legértékesebb üzletkötője.",
+      subquote: "Levesszük a technikai terheket a válláról, hogy Ön a saját üzletére fókuszálhasson.",
       stats: {
         experience: "Alapok",
-        exp_value: "Stabil Technológiai Háttér",
-        collab: "Szinergia",
-        collab_value: "Összehangolt Fejlesztői Tudás",
-        perf: "Minőség",
-        perf_value: "Kimagasló Webes Teljesítmény",
+        exp_value: "Megbízható Háttér",
+        collab: "Hozzáállás",
+        collab_value: "Személyes Figyelem",
+        perf: "Érték",
+        perf_value: "Gyors Megtérülés",
         reliability: "Garancia",
-        rel_value: "Hosszú Távra Tervezett Megoldások",
+        rel_value: "Hosszú Távú Támogatás",
       },
     },
     services: {
-      badge: "Képességek",
-      title_part1: "Full-Stack ",
-      title_accent: "Kiválóság",
+      badge: "Szolgáltatások",
+      title_part1: "Miben ",
+      title_accent: "Segíthetünk?",
       items: [
         {
-          title: "Vállalati Webalkalmazások",
-          desc: "Robusztus, skálázható belső rendszerek és ügyféloldali platformok Next.js és TypeScript alapokon.",
+          title: "Céges Bemutatkozó Oldalak",
+          desc: "Professzionális megjelenés, amely bizalmat épít és bemutatja szolgáltatásait.",
         },
         {
-          title: "Egyedi SaaS Fejlesztés",
-          desc: "Előfizetéses platformok teljes körű fejlesztése, zökkenőmentes API integrációkkal.",
+          title: "Landing Oldalak",
+          desc: "Célzott, konverziónövelő oldalak marketing kampányokhoz és termékbevezetésekhez.",
         },
         {
-          title: "Prémium Landing Oldalak",
-          desc: "Magas konverziójú, pixel-pontos landing oldalak, amelyek lenyűgözik a látogatókat.",
+          title: "Webshopok és E-kereskedelem",
+          desc: "Felhasználóbarát online boltok, hogy termékeit a nap 24 órájában értékesíthesse.",
         },
         {
-          title: "UI/UX Megvalósítás",
-          desc: "Komplex tervek átültetése folyékony, reszponzív és akadálymentes felhasználói felületekre.",
+          title: "Keresőoptimalizálás (SEO)",
+          desc: "Technikai és tartalmi beállítások, hogy a vásárlók könnyen rátaláljanak a Google-ben.",
         },
         {
-          title: "Mobile-First Design",
-          desc: "Teljesen reszponzív élmények, amelyek natív érzetet nyújtanak minden eszközön.",
+          title: "Mobilbarát Kialakítás",
+          desc: "Tökéletes megjelenés minden eszközön – okostelefonon, tableten és asztali gépen is.",
         },
         {
-          title: "Teljesítmény Audit",
-          desc: "Mélyreható optimalizálás Core Web Vitals, sebesség és enterprise SEO szempontok szerint.",
+          title: "Karbantartás és Támogatás",
+          desc: "Folyamatos frissítések és segítségnyújtás, hogy weboldala mindig biztonságos legyen.",
         },
       ],
     },
     portfolio: {
       badge: "Válogatott Munkáink",
-      title_part1: "Bizonyított ",
-      title_accent: "Eredmények",
+      title_part1: "Eddigi ",
+      title_accent: "Eredményeink",
       projects: [
         {
-          title: "VibeVaults Feedback Tool",
-          category: "SaaS Megoldás",
-          description: "Egy modern platform, amely megszünteti a visszajelzési káoszt és felgyorsítja a webfejlesztési folyamatokat.",
+          title: "VibeVaults",
+          category: "Üzleti Megoldás",
+          description: "Egy modern platform, amely megkönnyíti az ügyfélkapcsolatokat és felgyorsítja a folyamatokat.",
         },
         {
           title: "Tar Engineering",
@@ -327,9 +325,9 @@ export const translations = {
     },
     contact: {
       badge: "Kapcsolatfelvétel",
-      title_part1: "Építsünk Valami ",
-      title_accent: "Kivételeset",
-      description: "Akár vállalati szintű rendszert, akár egyedi prémium webalkalmazást keres, mi segítünk a siker megtervezésében.",
+      title_part1: "Lépjünk a ",
+      title_accent: "Következő Szintre",
+      description: "Legyen szó egy egyszerű bemutatkozó oldalról vagy egy webshopról, keressen minket bizalommal!",
       email_label: "Írjon Nekünk",
       form: {
         name: "Név",
@@ -338,11 +336,11 @@ export const translations = {
         message: "Üzenet",
         choose: "Válassz opciót",
         submit: "Üzenet Küldése",
-        options: ["Vállalati Webalkalmazás", "Egyedi SaaS", "Prémium Weboldal", "Konzultáció", "Egyéb"],
+        options: ["Céges Weboldal", "Webshop", "Landing Oldal", "Karbantartás", "Konzultáció", "Egyéb"],
       },
     },
     footer: {
-      description: "Vállalati szintű webes megoldások és prémium digitális élmények tervezése technikai tudással és művészi precizitással.",
+      description: "Professzionális webes megoldások mikro- és kisvállalkozások számára, személyre szabott figyelemmel.",
       nav_title: "Navigáció",
       connect_title: "Kapcsolat",
       built_with: "Készült",
@@ -396,7 +394,7 @@ export const translations = {
         },
         {
           title: "10. Kapcsolat",
-          content: ["Kérdés esetén: maro.hajnalka@gmail.com, szurilo@gmail.com"]
+          content: ["Kérdés esetén: hajnalka@devduo.eu, jozsef@devduo.eu"]
         }
       ]
     },
@@ -410,7 +408,7 @@ export const translations = {
         },
         {
           title: "2. Adatkezelő adatai",
-          content: ["Szolgáltatás neve: DEV DUO<br />Üzemeltető: Maró Hajnalka, Tar József<br />Kapcsolat: maro.hajnalka@gmail.com, szurilo@gmail.com <br />Helyszín: European Union (Hungary)"]
+          content: ["Szolgáltatás neve: DEV DUO<br />Üzemeltető: Maró Hajnalka, Tar József<br />Kapcsolat: hajnalka@devduo.eu, jozsef@devduo.eu <br />Helyszín: European Union (Hungary)"]
         },
         {
           title: "3. Kezelt adatok köre",
@@ -474,7 +472,7 @@ export const translations = {
         },
         {
           title: "11. Kapcsolat",
-          content: ["Kérdés esetén: maro.hajnalka@gmail.com, szurilo@gmail.com"]
+          content: ["Kérdés esetén: hajnalka@devduo.eu, jozsef@devduo.eu"]
         }
       ]
     }

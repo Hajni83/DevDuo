@@ -22,17 +22,7 @@ export default function Hero() {
 
           {/* LEFT — szöveg + CTA */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left order-1">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="inline-flex items-center space-x-2 px-4 py-2 rounded-full glass border-black/5 mb-6 md:mb-8"
-            >
-              <Sparkles className="w-4 h-4 text-accent-primary" />
-              <span className="text-xs font-semibold tracking-wider uppercase text-slate-500">
-                {t.hero.badge}
-              </span>
-            </motion.div>
+
 
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -88,7 +78,7 @@ export default function Hero() {
 
             {/* Hajni — kisebb, bal */}
             <motion.div
-             initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.45 }}
               className="relative w-[160px] sm:w-[210px] md:w-[240px] aspect-[4/5] z-20"
@@ -144,8 +134,8 @@ export default function Hero() {
                 <Image
                   src="/avatars/avatar.png"
                   alt="Maró Hajnalka - Frontend Developer"
-                  width={480} 
-                  height={600} 
+                  width={480}
+                  height={600}
                   quality={95}
                   className="w-full h-full object-cover object-top"
                 />

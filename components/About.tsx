@@ -34,7 +34,7 @@ export default function About() {
             <p className="text-lg text-slate-600 mb-6 leading-relaxed md:text-center lg:text-left">
               {t.about.description1}
             </p>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-4 sm:gap-6">
               {stats.map((stat, i) => (
                 <motion.div
                   key={i}
@@ -58,25 +58,40 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-square max-h-[420px] lg:max-h-none rounded-3xl overflow-hidden bg-white border border-black/5 shadow-inner relative z-10 p-8 flex flex-col justify-center items-center text-center group">
-              {/* Running border animation */}
-              <div className="absolute top-0 left-0 w-0 h-[2px] bg-accent-primary group-hover:w-full transition-all duration-300 ease-in-out" />
-              <div className="absolute top-0 right-0 w-[2px] h-0 bg-accent-primary group-hover:h-full transition-all duration-300 delay-300 ease-in-out" />
-              <div className="absolute bottom-0 right-0 w-0 h-[2px] bg-accent-primary group-hover:w-full transition-all duration-300 delay-600 ease-in-out" />
-              <div className="absolute bottom-0 left-0 w-[2px] h-0 bg-accent-primary group-hover:h-full transition-all duration-300 delay-900 ease-in-out" />
-
-              <div className="w-24 h-24 bg-gradient-to-br from-accent-primary to-accent-secondary rounded-full blur-3xl opacity-10 absolute top-10 left-10" />
+            <div className="w-full min-h-[350px] lg:min-h-0 lg:aspect-square rounded-3xl sm:rounded-[2.5rem] overflow-hidden bg-slate-900 border border-slate-800 shadow-2xl relative z-10 p-6 sm:p-12 flex flex-col justify-center items-center text-center group">
+              {/* Dynamic background lighting */}
+              <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] bg-[radial-gradient(ellipse_at_center,rgba(56,189,248,0.15),transparent_50%)] group-hover:scale-110 transition-transform duration-1000 ease-out" />
+              <div className="absolute bottom-[-50%] right-[-50%] w-[200%] h-[200%] bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.15),transparent_50%)] group-hover:scale-110 transition-transform duration-1000 ease-out" />
               
-              <h4 className="text-2xl font-bold mb-4 italic text-slate-800">"{t.about.quote}"</h4>
-              <div className="w-12 h-1 bg-accent-primary mb-6 group-hover:w-24 transition-all duration-500" />
-              <p className="text-slate-600 max-w-sm">
-                {t.about.subquote}
-              </p>
+              {/* Quote Icon */}
+              <div className="relative mb-6 sm:mb-8 z-10">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-md group-hover:rotate-6 group-hover:scale-110 transition-all duration-500 shadow-lg">
+                  <svg className="w-8 h-8 sm:w-10 sm:h-10 text-accent-primary drop-shadow-[0_0_15px_rgba(56,189,248,0.5)]" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                  </svg>
+                </div>
+              </div>
+
+              <div className="relative z-10 flex flex-col items-center">
+                <h4 className="text-2xl sm:text-3xl lg:text-4xl font-black mb-4 sm:mb-6 text-white leading-snug tracking-tight drop-shadow-md">
+                  "{t.about.quote}"
+                </h4>
+                
+                <div className="w-16 h-1.5 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-full mb-6 sm:mb-8 group-hover:w-32 transition-all duration-500 ease-out" />
+                
+                <p className="text-slate-300 font-medium text-base sm:text-lg leading-relaxed max-w-sm">
+                  {t.about.subquote}
+                </p>
+              </div>
+
+              {/* Floating accents */}
+              <div className="absolute top-6 left-6 w-3 h-3 rounded-full bg-accent-primary/50 blur-sm group-hover:bg-accent-primary transition-colors duration-500" />
+              <div className="absolute bottom-6 right-6 w-4 h-4 rounded-full bg-accent-secondary/50 blur-sm group-hover:bg-accent-secondary transition-colors duration-500" />
             </div>
 
             {/* Decorative elements */}
-            <div className="hidden lg:block absolute -top-6 -right-6 w-32 h-32 bg-white border border-black/5 rounded-2xl -z-0 rotate-12 shadow-sm" />
-            <div className="hidden lg:block absolute -bottom-8 -left-8 w-48 h-48 bg-white border border-black/5 rounded-full -z-0 opacity-50 shadow-sm" />
+            <div className="hidden lg:block absolute -top-8 -right-8 w-40 h-40 bg-accent-primary/10 border border-accent-primary/20 rounded-3xl -z-0 rotate-12 blur-sm group-hover:rotate-45 transition-all duration-700" />
+            <div className="hidden lg:block absolute -bottom-10 -left-10 w-56 h-56 bg-accent-secondary/10 border border-accent-secondary/20 rounded-full -z-0 blur-md opacity-70 group-hover:scale-110 transition-all duration-700" />
           </motion.div>
         </div>
       </div>

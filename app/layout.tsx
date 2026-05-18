@@ -61,7 +61,7 @@ export default function RootLayout({
     "image": "https://web-duo.vercel.app/og-image.jpg",
     "url": "https://web-duo.vercel.app",
     "telephone": "",
-    "email": "maro.hajnalka@gmail.com",
+    "email": "hajnalka@devduo.eu",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "HU"

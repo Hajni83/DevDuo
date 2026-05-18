@@ -90,7 +90,7 @@ export default function Contact() {
                 </a>
                 <div className="flex flex-col">
                   <span className="text-xs font-bold text-accent-secondary uppercase tracking-widest mb-1">Írj nekem</span>
-                  <a href="mailto:maro.hajnalka@gmail.com" className="text-md font-medium text-slate-900 hover:text-accent-secondary transition-colors break-all">maro.hajnalka@gmail.com</a>
+                  <a href="mailto:hajnalka@devduo.eu" className="text-md font-medium text-slate-900 hover:text-accent-secondary transition-colors break-all">hajnalka@devduo.eu</a>
                 </div>
               </div>
               {/* Jocó */}
@@ -118,7 +118,7 @@ export default function Contact() {
                 </a>
                 <div className="flex flex-col">
                   <span className="text-xs font-bold text-accent-primary uppercase tracking-widest mb-1">Vagy nekem</span>
-                  <a href="mailto:szurilo@gmail.com" className="text-md font-medium text-slate-900 hover:text-accent-primary transition-colors break-all">szurilo@gmail.com</a>
+                  <a href="mailto:jozsef@devduo.eu" className="text-md font-medium text-slate-900 hover:text-accent-primary transition-colors break-all">jozsef@devduo.eu</a>
                 </div>
               </div>
 
