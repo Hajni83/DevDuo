@@ -301,8 +301,8 @@ export const translations = {
           desc: "Tökéletes megjelenés minden eszközön – okostelefonon, tableten és asztali gépen is.",
         },
         {
-          title: "Karbantartás és Támogatás",
-          desc: "Folyamatos frissítések és segítségnyújtás, hogy weboldala mindig biztonságos legyen.",
+          title: "Üzemeltetés és Támogatás",
+          desc: "Üzemeltetés, frissítések és segítségnyújtás, hogy weboldala mindig biztonságos legyen.",
         },
       ],
     },
