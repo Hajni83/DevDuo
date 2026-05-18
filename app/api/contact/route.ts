@@ -44,10 +44,10 @@ export async function POST(req: NextRequest) {
     `;
 
     const { data, error } = await resend.emails.send({
-      from: "DevDuo Studio <hajnalka@devduo.eu>",
-      to: ["maro.hajnalka@gmail.com"],
+      from: "DevDuo Studio <info@devduo.eu>",
+      to: ["hajnalka@devduo.eu"],
       subject: `[DevDuo] ${subject} – ${name}`,
-      replyTo: email,
+      replyTo:email,
       html,
     });
 
