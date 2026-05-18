@@ -28,7 +28,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[1.1] mb-5 md:mb-6 text-slate-900"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-black tracking-tight leading-[1.1] mb-5 md:mb-6 text-slate-900"
             >
               {t.hero.title_part1}{" "}
               <span className="text-gradient">{t.hero.title_gradient}</span>{" "}
@@ -128,7 +128,7 @@ export default function Hero() {
               initial={{ opacity: 0, x: 40, y: -20 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 0.8, delay: 0.35, ease: "easeOut" }}
-              className="absolute top-0 left-[-24px] w-[290px] h-[360px] z-10"
+              className="absolute top-0 left-4 w-[290px] h-[360px] z-10"
             >
               <div className="w-full h-full rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5">
                 <Image
