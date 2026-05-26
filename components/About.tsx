@@ -1,17 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Award, Code2, Users2, Zap } from "lucide-react";
+import { TrendingUp, Workflow, LifeBuoy } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function About() {
   const { t } = useLanguage();
 
   const stats = [
-    { icon: Award, label: t.about.stats.experience, value: t.about.stats.exp_value },
-    { icon: Users2, label: t.about.stats.collab, value: t.about.stats.collab_value },
-    { icon: Zap, label: t.about.stats.perf, value: t.about.stats.perf_value },
-    { icon: Code2, label: t.about.stats.reliability, value: t.about.stats.rel_value },
+    { icon: TrendingUp, label: t.about.stats.experience, value: t.about.stats.exp_value },
+    { icon: Workflow, label: t.about.stats.collab, value: t.about.stats.collab_value },
+    { icon: LifeBuoy, label: t.about.stats.perf, value: t.about.stats.perf_value },
   ];
 
   return (
@@ -31,21 +30,51 @@ export default function About() {
               {t.about.title_part1} <br />
               <span className="text-slate-400">{t.about.title_accent}</span>
             </h2>
-            <p className="text-lg text-slate-600 mb-6 leading-relaxed md:text-center lg:text-left">
+            <p className="text-lg text-slate-600 mb-4 leading-relaxed md:text-center lg:text-left">
               {t.about.description1}
             </p>
-            <div className="grid grid-cols-2 gap-4 sm:gap-6">
+            <p className="text-lg text-slate-600 mb-8 leading-relaxed md:text-center lg:text-left">
+              {t.about.description2}
+            </p>
+
+            {/* Miért választanak minket? Section Title */}
+            <div className="mt-12 mb-6">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 md:text-center lg:text-left flex items-center justify-center lg:justify-start space-x-2">
+                <span className="w-1.5 h-6 bg-gradient-to-b from-accent-primary to-accent-secondary rounded-full inline-block" />
+                <span>{t.about.stats.why_choose_us}</span>
+              </h3>
+            </div>
+
+            {/* Benefit Cards Stack */}
+            <div className="flex flex-col gap-5">
               {stats.map((stat, i) => (
                 <motion.div
                   key={i}
-                  whileHover={{ y: -8 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                  className="p-4 sm:p-6 rounded-2xl bg-white border border-slate-100 hover:border-accent-primary/30 transition-all duration-300 shadow-sm hover:shadow-xl group relative overflow-hidden min-w-0"
+                  whileHover={{ x: 6 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 25 }}
+                  className="p-5 sm:p-6 rounded-2xl bg-white border border-slate-100 hover:border-accent-primary/30 transition-all duration-300 shadow-sm hover:shadow-xl group relative overflow-hidden flex gap-4 sm:gap-5 items-start min-w-0"
                 >
+                  {/* Decorative glowing border accent */}
                   <div className="absolute top-0 left-0 w-1 h-0 bg-accent-primary group-hover:h-full transition-all duration-500" />
-                  <stat.icon className={`w-5 h-5 sm:w-6 sm:h-6 mb-2 sm:mb-3 ${i % 2 === 0 ? 'text-accent-primary' : 'text-accent-secondary'} group-hover:scale-110 transition-transform`} />
-                  <div className="text-base sm:text-2xl font-bold text-slate-900 mb-1 break-words leading-tight">{stat.value}</div>
-                  <div className="text-[10px] sm:text-xs text-slate-500 uppercase tracking-widest font-medium leading-tight">{stat.label}</div>
+                  
+                  {/* Icon Frame */}
+                  <div className={`flex-shrink-0 p-3 rounded-xl bg-slate-50 border border-slate-100 transition-all duration-500 group-hover:scale-110 shadow-sm ${
+                    i === 0 ? 'text-accent-primary group-hover:bg-accent-primary group-hover:text-white' : 
+                    i === 1 ? 'text-accent-secondary group-hover:bg-accent-secondary group-hover:text-white' :
+                    'text-indigo-500 group-hover:bg-indigo-500 group-hover:text-white'
+                  }`}>
+                    <stat.icon className="w-6 h-6 transition-transform duration-300" />
+                  </div>
+                  
+                  {/* Content Stack */}
+                  <div className="flex-grow min-w-0">
+                    <h4 className="text-base sm:text-lg font-extrabold text-slate-900 leading-snug break-words transition-colors duration-300 group-hover:text-slate-950">
+                      {stat.value}
+                    </h4>
+                    <p className="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed font-medium">
+                      {stat.label}
+                    </p>
+                  </div>
                 </motion.div>
               ))}
             </div>

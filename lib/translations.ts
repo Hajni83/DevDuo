@@ -12,29 +12,29 @@ export const translations = {
       terms_of_service: "Terms of Service",
     },
     hero: {
-      title_part1: "",
-      title_gradient: "Professional Websites",
-      title_part2: " for Small Businesses",
-      description: "We help your business stand out online. We build modern, fast websites that attract customers and drive growth.",
+      title_part1: "Your website either ",
+      title_gradient: "convinces",
+      title_part2: " or drives away.",
+      description: "Unfortunately, most small business websites do the latter – not on purpose, they are just outdated. We change this with modern, fast, and high-converting websites.",
       cta_primary: "View Our Work",
       cta_secondary: "Talk to Us",
     },
     about: {
       badge: "Our Mission",
-      title_part1: "Your Reliable ",
-      title_accent: "Digital Partners",
-      description1: "As a development duo, our goal is to make top-tier web technologies accessible to micro and small businesses. We build professional websites that build trust and support your growth.",
+      title_part1: "What do you get ",
+      title_accent: "when working with us?",
+      description1: "You don't just fill out a form and then receive something weeks later. You know exactly where the project stands, what is happening, and why. The two of us work together – which means there is always a real person you can ask.",
+      description2: "The completed website is not a closed chapter. If you have a question, want to make a change, or if your business grows – we are there. Not a generic support desk, but two real people who know your system inside out.",
       quote: "A great website is your best salesperson.",
       subquote: "We handle the technical heavy lifting, so you can focus on running your business.",
       stats: {
-        experience: "Foundation",
-        exp_value: "Reliable Background",
-        collab: "Approach",
-        collab_value: "Personal Attention",
-        perf: "Value",
-        perf_value: "Fast ROI",
-        reliability: "Guarantee",
-        rel_value: "Long-term Support",
+        why_choose_us: "Why choose us?",
+        experience: "We don't look at whether it is pretty. We look at whether it works. Does it generate inquiries? Does it convince? Does it sell? If the answer is not a clear yes, there is work to be done. We build websites where this is measurable.",
+        exp_value: "Because a website either brings business – or it brings nothing",
+        collab: "A template is good until you start to grow. After that, it is more of an obstacle than a help. Many of our clients approached us precisely from this situation. We adapt the system to your operations – not the other way around.",
+        collab_value: "Because your business does not fit in a box",
+        perf: "We don't think in one-off projects, we think in foundations. What we build is scalable, understandable, and does not collapse when something changes. You will still be able to use it two years from now – and you will know who to turn to if needed.",
+        perf_value: "Because a good system works for you for years",
       },
     },
     services: {
@@ -67,6 +67,34 @@ export const translations = {
           desc: "Ongoing updates and technical support to keep your website secure and running smoothly.",
         },
       ],
+    },
+    process: {
+      badge: "How We Work",
+      title_part1: "How we will ",
+      title_accent: "work with you",
+      subheading: "YOU ALWAYS KNOW WHAT'S HAPPENING",
+      steps: [
+        {
+          number: "1",
+          title: "Consultation",
+          desc: "First, we get to know your business – only then do we suggest anything. A short conversation is enough to figure out what you actually need, and together we set the direction."
+        },
+        {
+          number: "2",
+          title: "Development",
+          desc: "We plan, we build, and we don't disappear in the process. You can see where things stand, have a say when something changes – no surprises at the end."
+        },
+        {
+          number: "3",
+          title: "Testing",
+          desc: "Before anyone else sees it, we've already checked everything. Phone, tablet, browser – we test across every device to make sure it works flawlessly and reliably."
+        },
+        {
+          number: "4",
+          title: "Launch & Support",
+          desc: "We go live, walk you through how to manage it, and we don't disappear after that either. Questions, changes, growth – we're there for all of it."
+        }
+      ]
     },
     portfolio: {
       badge: "Selected Work",
@@ -250,29 +278,29 @@ export const translations = {
       terms_of_service: "Általános Szerződési Feltételek",
     },
     hero: {
-      title_part1: "",
-      title_gradient: "Profi Weboldalak",
-      title_part2: " Kisvállalkozásoknak",
-      description: "Segítünk vállalkozásának kitűnni az online térben. Olyan modern és gyors weboldalakat készítünk, amelyek vonzzák az ügyfeleket.",
+      title_part1: "A weboldalad vagy ",
+      title_gradient: "meggyőz,",
+      title_part2: " vagy elriaszt.",
+      description: "A legtöbb kisvállalkozó weboldala sajnos az utóbbit csinálja – nem szándékosan, csak elavult. Mi ezen változtatunk: modern, gyors, és ügyfelet hozó weboldalakkal.",
       cta_primary: "Munkáink megtekintése",
       cta_secondary: "Beszélgessünk",
     },
     about: {
       badge: "Küldetésünk",
-      title_part1: "Megbízható ",
-      title_accent: "digitális partnerek",
-      description1: "Fejlesztő párosként célunk, hogy a mikro- és kisvállalkozások is hozzáférjenek a legmodernebb webes technológiákhoz. Vállalkozása számára olyan profi weboldalt építünk, amely bizalmat ébreszt a vevőkben és támogatja a növekedést.",
+      title_part1: "Mit kapsz, ",
+      title_accent: "ha velünk dolgozol?",
+      description1: "Nem egy űrlapot töltesz ki, majd hetek múlva átveszel valamit. Végig tudod, hol tart a projekt, mi történik, és miért. Ketten dolgozunk – ez azt jelenti, hogy mindig van egy konkrét ember, akit megkérdezhetsz.",
+      description2: "Az elkészült weboldal nem egy lezárt fejezet. Ha kérdésed van, ha változtatni szeretnél, ha növekszik a vállalkozásod – ott vagyunk. Nem ügyfélszolgálat, hanem két ember, aki ismeri a te rendszeredet.",
       quote: "Egy jó weboldal a legértékesebb üzletkötője.",
       subquote: "Levesszük a technikai terheket a válláról, hogy Ön a saját üzletére fókuszálhasson.",
       stats: {
-        experience: "Alapok",
-        exp_value: "Megbízható Háttér",
-        collab: "Hozzáállás",
-        collab_value: "Személyes Figyelem",
-        perf: "Érték",
-        perf_value: "Gyors Megtérülés",
-        reliability: "Garancia",
-        rel_value: "Hosszú Távú Támogatás",
+        why_choose_us: "Miért választanak minket?",
+        experience: "Nem azt nézzük, hogy szép-e. Azt nézzük, hogy működik-e. Megkereséseket generál? Meggyőz? Elad? Ha a válasz nem egyértelmű igen, ott van tennivaló. Mi olyan weboldalakat építünk, ahol ez mérhető.",
+        exp_value: "Mert a weboldal üzletet hoz – vagy nem hoz semmit",
+        collab: "A sablon addig jó, amíg el nem kezdesz növekedni. Utána inkább akadály, mint segítség. Sok ügyfelünk pontosan ebből a helyzetből keresett meg minket. A rendszert a működésedhez igazítjuk – nem fordítva.",
+        collab_value: "Mert a te vállalkozásod nem illik dobozba",
+        perf: "Nem projektekben gondolkodunk, hanem alapokban. Amit építünk, az bővíthető, érthető, és nem omlik össze, ha változik valami. Két év múlva is tudod használni – és tudod, kihez fordulni, ha kell.",
+        perf_value: "Mert egy jó rendszer évekig dolgozik helyetted",
       },
     },
     services: {
@@ -305,6 +333,34 @@ export const translations = {
           desc: "Üzemeltetés, frissítések és segítségnyújtás, hogy weboldala mindig biztonságos legyen.",
         },
       ],
+    },
+    process: {
+      badge: "Hogyan dolgozunk",
+      title_part1: "Így fogunk ",
+      title_accent: "dolgozni veled",
+      subheading: "NÁLUNK MINDIG TUDOD, MI TÖRTÉNIK",
+      steps: [
+        {
+          number: "1",
+          title: "Konzultáció",
+          desc: "Először megértjük a vállalkozásodat – csak utána javaslunk bármit. Egy rövid beszélgetésből kiderül, mire van tényleg szükséged, és közösen kijelöljük az irányt."
+        },
+        {
+          number: "2",
+          title: "Fejlesztés",
+          desc: "Tervezünk, építünk, és közben nem tűnünk el. Látod, hol tart a projekt, beleszólhatsz, ha valami változik – nem a végén szembesülsz az eredménnyel."
+        },
+        {
+          number: "3",
+          title: "Tesztelés",
+          desc: "Mielőtt bárki más látja, mi már mindent átfésültünk. Telefon, tablet, böngésző – minden eszközön megnézzük, hogy hibátlanul és stabilan működjön."
+        },
+        {
+          number: "4",
+          title: "Élesítés",
+          desc: "Elindítjuk az oldalt, megmutatjuk hogyan kezeld, és utána sem tűnünk el. Ha kérdés van, ha valami változik, ha növekszik a vállalkozásod – ott vagyunk."
+        }
+      ]
     },
     portfolio: {
       badge: "Válogatott Munkáink",

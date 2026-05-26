@@ -30,8 +30,8 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-black tracking-tight leading-[1.1] mb-5 md:mb-6 text-slate-900"
             >
-              {t.hero.title_part1}{" "}
-              <span className="text-gradient">{t.hero.title_gradient}</span>{" "}
+              {t.hero.title_part1}
+              <span className="text-gradient">{t.hero.title_gradient}</span>
               {t.hero.title_part2}
             </motion.h1>
 
@@ -77,9 +77,9 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.45 }}
-              className="relative w-[140px] sm:w-[180px] md:w-[220px] lg:w-[240px] xl:w-[280px] aspect-[4/5] z-10 hover:scale-105 transition-transform duration-300 mb-6 sm:mb-8 md:mb-10"
+              className="relative w-[140px] sm:w-[180px] md:w-[220px] lg:w-[240px] xl:w-[280px] aspect-[4/5] z-10 hover:scale-105 transition-transform duration-300 mb-6 sm:mb-8 md:mb-10 group"
             >
-              <div className="w-full h-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl ring-4 ring-white hover:ring-accent-primary transition-all duration-300">
+              <div className="w-full h-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl ring-4 ring-white hover:ring-accent-primary transition-all duration-300 relative">
                 <Image
                   src="/avatars/avatar.png"
                   alt="Maró Hajnalka - Frontend Developer"
@@ -89,6 +89,24 @@ export default function Hero() {
                   className="w-full h-full object-cover object-top"
                 />
               </div>
+
+              {/* Hajni Name Tag — Hajnalka */}
+              <motion.div
+                initial={{ opacity: 0, y: 15, scale: 0.9 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.9, type: "spring", stiffness: 100 }}
+                className="absolute -bottom-5 sm:-bottom-6 left-1/2 -translate-x-1/2 z-20 pointer-events-none"
+              >
+                <div className="glass px-4 py-1.5 sm:px-5 sm:py-2 rounded-full border border-accent-primary/20 shadow-lg shadow-accent-primary/5 flex items-center space-x-2 backdrop-blur-md">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-primary opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-accent-primary"></span>
+                  </span>
+                  <span className="text-xs sm:text-sm font-extrabold tracking-wider uppercase bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                    <AnimatedName name="Hajnalka" delay={1.1} />
+                  </span>
+                </div>
+              </motion.div>
             </motion.div>
 
             {/* Jocó — jobb oldali kép */}
@@ -96,9 +114,27 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.55 }}
-              className="relative w-[140px] sm:w-[180px] md:w-[220px] lg:w-[240px] xl:w-[280px] aspect-[4/5] z-10 hover:scale-105 transition-transform duration-300"
+              className="relative w-[140px] sm:w-[180px] md:w-[220px] lg:w-[240px] xl:w-[280px] aspect-[4/5] z-10 hover:scale-105 transition-transform duration-300 group"
             >
-              <div className="w-full h-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl ring-4 ring-white hover:ring-accent-secondary transition-all duration-300">
+              {/* Jocó Name Tag — József */}
+              <motion.div
+                initial={{ opacity: 0, y: -15, scale: 0.9 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 0.6, delay: 1.1, type: "spring", stiffness: 100 }}
+                className="absolute -top-5 sm:-top-6 left-1/2 -translate-x-1/2 z-20 pointer-events-none"
+              >
+                <div className="glass px-4 py-1.5 sm:px-5 sm:py-2 rounded-full border border-accent-secondary/20 shadow-lg shadow-accent-secondary/5 flex items-center space-x-2 backdrop-blur-md">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-secondary opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-accent-secondary"></span>
+                  </span>
+                  <span className="text-xs sm:text-sm font-extrabold tracking-wider uppercase bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+                    <AnimatedName name="József" delay={1.3} />
+                  </span>
+                </div>
+              </motion.div>
+
+              <div className="w-full h-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl ring-4 ring-white hover:ring-accent-secondary transition-all duration-300 relative">
                 <Image
                   src="/avatars/Jocó.png"
                   alt="Tar József - Fullstack Developer"
@@ -114,5 +150,50 @@ export default function Hero() {
         </div>
       </div>
     </section>
+  );
+}
+
+// Helper component for animating name letters on load
+function AnimatedName({ name, delay }: { name: string; delay: number }) {
+  const letters = Array.from(name);
+  
+  return (
+    <motion.span
+      initial="hidden"
+      animate="visible"
+      variants={{
+        hidden: { opacity: 0 },
+        visible: {
+          opacity: 1,
+          transition: {
+            staggerChildren: 0.08,
+            delayChildren: delay,
+          },
+        },
+      }}
+      className="inline-flex"
+    >
+      {letters.map((char, index) => (
+        <motion.span
+          key={index}
+          variants={{
+            hidden: { opacity: 0, y: 10, scale: 0.8 },
+            visible: { 
+              opacity: 1, 
+              y: 0, 
+              scale: 1,
+              transition: {
+                type: "spring",
+                stiffness: 150,
+                damping: 12
+              }
+            },
+          }}
+          className="inline-block"
+        >
+          {char === " " ? "\u00A0" : char}
+        </motion.span>
+      ))}
+    </motion.span>
   );
 }
