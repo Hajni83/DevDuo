@@ -99,16 +99,6 @@ export default function Portfolio() {
             </motion.div>
           ))}
         </div>
-        <div className="text-center mt-12">
-          <a 
-            href="https://jozseftar.netlify.app/works"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-accent-primary to-accent-secondary text-white font-black rounded-xl shadow-lg shadow-accent-primary/20 hover:opacity-90 transition-all"
-          >
-            <span>További munkáink</span>
-          </a>
-        </div>
       </div>
     </section>
   );

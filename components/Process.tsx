@@ -53,13 +53,24 @@ export default function Process() {
         <div className="relative pl-8 md:pl-0 flex flex-col md:grid md:grid-cols-4 gap-8 md:gap-6 lg:gap-8">
           
           {/* Mobile Vertical Line */}
-          <div className="absolute left-[24px] top-6 bottom-6 w-[2px] bg-slate-200 -z-0 md:hidden">
+          <div className="absolute left-[24px] top-6 bottom-6 w-[2px] bg-slate-200 md:hidden">
             <motion.div
               initial={{ height: 0 }}
               whileInView={{ height: "100%" }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
               className="w-full bg-gradient-to-b from-accent-primary to-accent-secondary"
+            />
+          </div>
+
+          {/* Desktop Horizontal Connector Line — rendered once, behind all cards */}
+          <div className="absolute top-0 left-[12.5%] right-[12.5%] h-[2px] bg-slate-200 hidden md:block" style={{ zIndex: 0 }}>
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: "100%" }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.3 }}
+              className="h-full bg-gradient-to-r from-accent-primary to-accent-secondary"
             />
           </div>
 
@@ -72,19 +83,6 @@ export default function Process() {
               transition={{ duration: 0.6, delay: i * 0.15 }}
               className="relative group min-w-0"
             >
-              {/* Desktop Horizontal Line */}
-              {i < 3 && (
-                <div className="absolute top-0 left-[60%] right-[-60%] h-[2px] bg-slate-200 -z-0 hidden md:block">
-                  <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: "100%" }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.8, delay: i * 0.15 + 0.3 }}
-                      className="h-full bg-gradient-to-r from-accent-primary to-accent-secondary"
-                  />
-                </div>
-              )}
-
               {/* Number Badge */}
               <div className="absolute left-0 md:left-1/2 top-6 md:top-0 -translate-y-1/2 -translate-x-[24px] md:-translate-x-1/2 w-8 h-8 rounded-full bg-gradient-duo text-white font-black text-sm flex items-center justify-center shadow-lg shadow-accent-primary/25 z-20 group-hover:scale-115 transition-transform duration-300">
                 {step.number}
@@ -93,7 +91,7 @@ export default function Process() {
               {/* Card Wrapper */}
               <div className="glass p-6 sm:p-8 pt-10 md:pt-10 rounded-3xl bg-white border border-slate-100/80 shadow-sm hover:shadow-xl hover:border-accent-primary/30 transition-all duration-300 flex flex-col items-start md:items-center text-left md:text-center h-full relative z-10">
                 {/* Small card light effect */}
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-duo opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-t-3xl" />
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-duo opacity-0 transition-opacity duration-500 rounded-t-3xl" />
                 
                 <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 mb-3 md:mt-2 transition-colors duration-300 group-hover:text-slate-950">
                   {step.title}
