@@ -51,14 +51,6 @@ export const translations = {
           desc: "Targeted, high-converting pages for marketing campaigns and product launches.",
         },
         {
-          title: "E-commerce Solutions",
-          desc: "User-friendly online stores that help you sell your products 24/7 with ease.",
-        },
-        {
-          title: "Search Engine Optimization (SEO)",
-          desc: "Technical and content optimization so customers can easily find you on Google.",
-        },
-        {
           title: "Mobile-First Design",
           desc: "Flawless and responsive experience on every device – smartphones, tablets, and desktops.",
         },
@@ -315,14 +307,6 @@ export const translations = {
         {
           title: "Landing Oldalak",
           desc: "Célzott, konverziónövelő oldalak marketing kampányokhoz és termékbevezetésekhez.",
-        },
-        {
-          title: "Webshopok és E-kereskedelem",
-          desc: "Felhasználóbarát online boltok, hogy termékeit a nap 24 órájában értékesíthesse.",
-        },
-        {
-          title: "Keresőoptimalizálás (SEO)",
-          desc: "Technikai és tartalmi beállítások, hogy a vásárlók könnyen rátaláljanak a Google-ben.",
         },
         {
           title: "Mobilbarát Kialakítás",

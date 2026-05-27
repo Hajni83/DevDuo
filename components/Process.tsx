@@ -50,7 +50,7 @@ export default function Process() {
         </div>
 
         {/* Timeline Grid */}
-        <div className="relative pl-8 md:pl-0 flex flex-col md:grid md:grid-cols-4 gap-8 md:gap-6 lg:gap-8">
+      <div className="relative pl-8 lg:pl-0 flex flex-col lg:grid lg:grid-cols-4 gap-8 lg:gap-6 lg:gap-8">
           
           {/* Mobile Vertical Line */}
           <div className="absolute left-[24px] top-6 bottom-6 w-[2px] bg-slate-200 md:hidden">
