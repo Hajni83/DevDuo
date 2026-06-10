@@ -25,11 +25,20 @@ export const metadata: Metadata = {
     title: "DEV DUO | Prémium Webfejlesztés & Digitális Megoldások",
     description: "Enterprise-szintű webfejlesztés, egyedi webalkalmazások, és prémium honlapok készítése.",
     siteName: "DEV DUO",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 1200,
+        alt: "DEV DUO",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "DEV DUO | Prémium Webfejlesztés",
     description: "Enterprise-szintű webfejlesztés, egyedi webalkalmazások, és prémium honlapok készítése.",
+    images: ["/og-image.jpg"],
   },
   icons: {
     icon: "/icon.svg",
